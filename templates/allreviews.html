@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All the user reviews</title>
+    <style type='text/css'>
+    
+    body {
+        position: relative;
+        font-family: verdana, Arial, sans-serif;
+        font-size: 14px;
+        width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        color: #333;
+        text-align: justify;
+    }
+
+     .post-content {
+        font-size: 20px;
+        margin-top: 5px;
+        background-color:#CCFFCC;
+    }
+
+    .main-title {
+        display: block;
+        color: #0000AA;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        padding: 10px;
+        background: #E4DFDF;
+        box-shadow: 0px 0px 0px #888; -webkit-box-shadow: 0px 0px 10px #888;
+    }
+
+    .header{
+    	background-color: rgb(202,225,255);
+    	color:white;
+    	height:30px;
+    	padding:1% 0% 1% 0%;
+    	width:100%;
+	}
+    </style>
+    </head>
+    <body>
+    	<div class="main-title">Summaryze</div>
+    	<div class='header'>
+	    
+	    <a class="nav" href="/">Home</a>
+      	<a class="nav" href="/addreview">Add a Review</a>
+      	<a class="nav" href="/allreviews">All Reviews</a>                    
+	    
+	  	</div>
+
+    	<div class='post-heading'>All Reviews</div>
+
+	    {% for review in reviews %}
+	    
+	    <div id="content">
+	        <div class="post-content">
+	            {{review.review}}
+	        </div>
+	    </div>
+	    <hr>
+	    {% endfor %}
+    </body>
+</html>

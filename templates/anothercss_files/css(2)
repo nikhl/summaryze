@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Fugaz One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fugaz One'), local('FugazOne-Regular'), url('http://themes.googleusercontent.com/static/fonts/fugazone/v3/foh--NswBHNPbRHy7yEyyD8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}

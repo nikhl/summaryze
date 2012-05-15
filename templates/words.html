@@ -14,7 +14,7 @@
         text-align: center;
     }
 
-    .intro {
+    .words {
         display: block;
         font-size: 18px;
         text-align:justify;
@@ -54,13 +54,47 @@
 	    	<a class="nav" href="/addreview">Add a Review</a>
 	    	<a class="nav" href="/allreviews">All Reviews</a>
 		</div>
-    	<div class='intro'>
-    		This application is what you want when you want to buy a new product and want to avoid the hassle of going through all of the reviews for the product. This application periodically collectes reviews from Amazon and classifies them as as Good or Bad. Further more it can extract the interesting features of the product and provide you with a whole summary.
-
-    		Lets get dive in !!
-
-    		Click on <a href='/addreview'>AddReview</a> and add a review and see yourself get classified.
+    	<div class='words'>
+    		Words extracted from Various reviews are 
     	</div>
+
+        {% for word in words %}
         
+        <div id="content">
+            <div class="post-content">
+                {{word}}
+            </div>
+        </div>
+        
+        {% endfor %}
+        
+        <div class='words'>
+            Training Labels obtained
+        </div>
+
+        {% for label in train_labels %}
+        
+        <div id="content">
+            <div class="post-content">
+                {{label}}
+            </div>
+        </div>
+        
+        {% endfor %}
+
+        <div class='words'>
+            Training data encoded to Sparse representation
+        </div>
+
+        {% for data in train_data %}
+        
+        <div id="content">
+            <div class="post-content">
+                {{data}}
+            </div>
+        </div>
+        
+        {% endfor %}
+
     </body>
 </html>
