@@ -15,10 +15,16 @@
         text-align: justify;
     }
 
-     .post-content {
+     .post-positive-content {
         font-size: 20px;
         margin-top: 5px;
         background-color:#CCFFCC;
+    }
+
+     .post-negative-content {
+        font-size: 20px;
+        margin-top: 5px;
+        background-color:#FF9933;
     }
 
     .main-title {
@@ -34,35 +40,57 @@
         box-shadow: 0px 0px 0px #888; -webkit-box-shadow: 0px 0px 10px #888;
     }
 
+    .post-heading{
+        color:black;
+        height:30px;
+        padding:1% 1% 1% 0%;
+        width:100%;
+        font-size: 22px;
+        margin-top:6px;
+        margin-bottom:6px;
+    }
+
     .header{
-    	background-color: rgb(202,225,255);
-    	color:white;
-    	height:30px;
-    	padding:1% 0% 1% 0%;
-    	width:100%;
-	}
+        background-color: rgb(202,225,255);
+        color:white;
+        height:30px;
+        padding:1% 1% 1% 0%;
+        width:100%;
+        font-size: 18px;
+    }
+
+
     </style>
     </head>
     <body>
     	<div class="main-title">Summaryze</div>
-    	<div class='header'>
-	    
-	    <a class="nav" href="/">Home</a>
-      	<a class="nav" href="/addreview">Add a Review</a>
-      	<a class="nav" href="/allreviews">All Reviews</a>                    
-	    
-	  	</div>
+
+        <div class='header'>
+            <a class="nav" href="/">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav" href="/addreview">Add a Review</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav" href="/allreviews">All Reviews</a>
+        </div>
 
     	<div class='post-heading'>All Reviews</div>
 
 	    {% for review in reviews %}
+        {% if review.label == 'Positive' %}
 	    
 	    <div id="content">
-	        <div class="post-content">
+	        <div class="post-positive-content">
 	            {{review.review}}
 	        </div>
 	    </div>
 	    <hr>
-	    {% endfor %}
+
+        {% else %}
+        <div id="content">
+            <div class="post-negative-content">
+                {{review.review}}
+            </div>
+        </div>
+        <hr>
+        {% endif %}
+        {% endfor %}
     </body>
 </html>

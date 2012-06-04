@@ -11,14 +11,15 @@
         margin: 0 auto;
         padding: 10px;
         color: #333;
-        text-align: center;
+        text-align: justify;
     }
 
-    .intro {
+    .intro, .cookie {
         display: block;
         font-size: 18px;
         text-align:justify;
         position:relative;   
+        margin-top:10px;
     }
 
     .main-title {
@@ -28,6 +29,7 @@
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 20px;
         text-decoration: none;
         padding: 10px;
         background: #E4DFDF;
@@ -38,8 +40,9 @@
     	background-color: rgb(202,225,255);
     	color:white;
     	height:30px;
-    	padding:1% 0% 1% 0%;
+    	padding:1% 1% 1% 0%;
     	width:100%;
+        font-size: 18px;
 	}
 
   </style>
@@ -49,18 +52,23 @@
     	<div class='main-title'>
     		Summaryze
     	</div>
-    	<div class='header'>
-	    	<a class="nav" href="/">Home</a>
-	    	<a class="nav" href="/addreview">Add a Review</a>
+    	
+        <!--div class='cookie'>
+            you have been here {{visits}} times
+        </div-->
+
+        <div class='header'>
+	    	<a class="nav" href="/">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    	<a class="nav" href="/addreview">Add a Review</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	    	<a class="nav" href="/allreviews">All Reviews</a>
 		</div>
-    	<div class='intro'>
+
+        <div class='intro'>
     		This application is what you want when you want to buy a new product and want to avoid the hassle of going through all of the reviews for the product. This application periodically collectes reviews from Amazon and classifies them as as Good or Bad. Further more it can extract the interesting features of the product and provide you with a whole summary.
 
     		Lets get dive in !!
 
-    		Click on <a href='/addreview'>AddReview</a> and add a review and see yourself get classified.
+    		Click on <a href='/addreview'>AddReview</a> and add a review and see your review gets classified.
     	</div>
-        
     </body>
 </html>

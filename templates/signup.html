@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Summaryze</title>
+        <style type="text/css">
+    body {
+        position: relative;
+        font-family: verdana, Arial, sans-serif;
+        font-size: 14px;
+        width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        color: #333;
+        text-align: center;
+    }
+
+    .signup_form{
+        display: block;
+        font-size: 18px;
+        text-align:justify;
+        position:relative;  
+    }
+
+    .main-title {
+        display: block;
+        color: #0000AA;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        padding: 10px;
+        background: #E4DFDF;
+        box-shadow: 0px 0px 0px #888; -webkit-box-shadow: 0px 0px 10px #888;
+    }
+
+    input[type=submit] {
+        font-size: 22px;
+        font-family: verdana;
+        width:200px;
+    }
+
+    input {
+        font-size: 22px;
+        width:300px;
+        font-family: verdana;
+        margin:1%;
+    }
+
+  </style>
+    </head>
+    <body>
+
+    	<div class='main-title'>
+    		Summaryze
+    	</div>
+    	
+        <div class='signup_form'>
+            <form action="/allreviews" method="post">
+                <label> 
+                    <div>Username </div>
+                    <input type='text' name='uname'>
+                </label> 
+                <div>
+                    <div>Password </div>
+                    <input type='password' name='pwd'>
+                </div>
+                <div>
+                    <div>Email(optional)</div>
+                    <input type='text' name='email'>
+                </div>
+                <div>
+                    <input type='submit' value='Signup'>
+                </div>
+                <div class='error'>
+                    {{error}}
+                </div>
+            </form>
+    	</div>
+    </body>
+</html>

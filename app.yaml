@@ -5,6 +5,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /classifier.*
+  script: classifier.app
+
 - url: /.*
   script: main.app
 

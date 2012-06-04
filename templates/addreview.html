@@ -53,9 +53,12 @@
         background-color: rgb(202,225,255);
         color:white;
         height:30px;
-        padding:1% 0% 1% 0%;
+        padding:1% 1% 1% 0%;
         width:100%;
+        font-size: 18px;
     }
+
+    
   </style>
 </head>
 
@@ -65,13 +68,13 @@
 
   <div class="main-title">Summaryze</div>
 
-    <div class='header'>
-          <a class="nav" href="/">Home</a>
-          <a class="nav" href="/addreview">Add a Review</a>
-          <a class="nav" href="/allreviews">All Reviews</a>      
-    </div>
+        <div class='header'>
+            <a class="nav" href="/">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav" href="/addreview">Add a Review</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav" href="/allreviews">All Reviews</a>
+        </div>
   
-    <form action="/allreviews" method="post">
+    <form action="/addreview" method="post">
         <label> 
             <div>Write a Review and get it classified</div>
             <textarea name='reviewContent' ></textarea>

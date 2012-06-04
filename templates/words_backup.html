@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Summaryze</title>
+        <style type="text/css">
+    body {
+        position: relative;
+        font-family: verdana, Arial, sans-serif;
+        font-size: 14px;
+        width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        color: #333;
+        text-align: center;
+    }
+
+    .words {
+        display: block;
+        font-size: 18px;
+        text-align:justify;
+        position:relative;   
+    }
+
+    .main-title {
+        display: block;
+        color: #0000AA;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        padding: 10px;
+        background: #E4DFDF;
+        box-shadow: 0px 0px 0px #888; -webkit-box-shadow: 0px 0px 10px #888;
+    }
+
+    .header{
+    	background-color: rgb(202,225,255);
+    	color:white;
+    	height:30px;
+    	padding:1% 0% 1% 0%;
+    	width:100%;
+	}
+
+  </style>
+    </head>
+    <body>
+
+    	<div class='main-title'>
+    		Summaryze
+    	</div>
+    	<div class='header'>
+	    	<a class="nav" href="/">Home</a>
+	    	<a class="nav" href="/addreview">Add a Review</a>
+	    	<a class="nav" href="/allreviews">All Reviews</a>
+		</div>
+    	<div class='words'>
+    		Words extracted from Various reviews are 
+    	</div>
+
+        {% for word in words %}
+        
+        <div id="content">
+            <div class="post-content">
+                {{word}}
+            </div>
+        </div>
+        
+        {% endfor %}
+        
+        <div class='words'>
+            Training Labels obtained
+        </div>
+
+        {% for label in train_labels %}
+        
+        <div id="content">
+            <div class="post-content">
+                {{label}}
+            </div>
+        </div>
+        
+        {% endfor %}
+
+        <div class='words'>
+            Training data encoded to Sparse representation
+        </div>
+
+        {% for data in train_data %}
+        
+        <div id="content">
+            <div class="post-content">
+                {{data}}
+            </div>
+        </div>
+        
+        {% endfor %}
+
+        {% for word in word_labels %}
+        print 'Hi'
+        <div id="content">
+            <div class="post-content">
+                {{word}}
+            </div>
+        </div>
+        
+        {% endfor %}
+
+        
+    </body>
+</html>

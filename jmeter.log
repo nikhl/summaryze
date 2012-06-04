@@ -1,0 +1,28 @@
+2012/06/04 01:16:43 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: Copyright (c) 1998-2009 The Apache Software Foundation 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: Version 2.3.4 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: java.version=1.6.0_23 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: java.vm.name=OpenJDK Server VM 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: os.name=Linux 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: os.arch=i386 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: os.version=3.0.0-20-generic-pae 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: JMeterHome=/usr/share/jmeter 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: user.dir  =/home/nikhil/GAE_python/GAE/summaryze 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: PWD       =/home/nikhil/GAE_python/GAE/summaryze 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: IP: 127.0.1.1 Name: nikhil FullName: nikhil 
+2012/06/04 01:16:44 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2012/06/04 01:16:46 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2012/06/04 01:16:49 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: No response parsers defined: text/html only will be scanned for embedded resources 
+2012/06/04 01:16:49 INFO  - jmeter.protocol.http.sampler.HTTPSampler: Maximum connection retries = 10 
+2012/06/04 01:16:49 INFO  - jmeter.protocol.http.sampler.HTTPSampler: Connection and read timeouts are available on this JVM 
+2012/06/04 01:16:50 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are END times 
+2012/06/04 01:16:50 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2012/06/04 01:17:24 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2012/06/04 01:17:24 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2012/06/04 01:17:24 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2012/06/04 01:17:24 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2012/06/04 01:17:24 INFO  - jmeter.engine.StandardJMeterEngine: All threads have been started 
+2012/06/04 01:22:06 INFO  - jmeter.gui.action.Start: Stopping test 
